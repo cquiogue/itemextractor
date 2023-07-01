@@ -29,21 +29,43 @@ textarea {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#output {
-  display: none;
-  background-color: #1f2933;
+.code-box {
+  background-color: #212f3d;
   padding: 10px;
   margin-top: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-#output.show {
-  display: block;
+#outputCode {
+  color: #ffffff;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 0;
+  font-size: 18px; /* Adjust the font size as needed */
 }
 
-#output div {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #212f3d;
-  border-radius: 5px;
+#copyButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #4e6174;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#copyButton:hover {
+  background-color: #4c6279;
+  transition: background-color 0.5s ease-in-out 0.2s; /* Adjust transition timing and delay */
+}
+
+#copyButton.copied {
+  background-color: #4b7299;
 }
