@@ -75,3 +75,20 @@ textarea {
 #copyButton.copied {
   background-color: #4b7299;
 }
+
+#clearButtonContainer {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#clearButton {
+  background-color: #4e6174;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}

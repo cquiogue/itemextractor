@@ -31,6 +31,17 @@ function scanDocument() {
   }
 }
 
+function clearInput() {
+  var documentInput = document.getElementById('documentInput');
+  var outputCode = document.getElementById('outputCode');
+
+  documentInput.value = ''; // Clear the input text
+  outputCode.textContent = ''; // Clear the output
+
+  var outputDiv = document.getElementById('output');
+  outputDiv.style.display = 'none'; // Hide the output container
+}
+
 function copyOutput() {
   var outputCode = document.getElementById('outputCode');
   var textToCopy = outputCode.textContent;
@@ -50,3 +61,7 @@ function copyOutput() {
 
 var input = document.getElementById('documentInput');
 input.addEventListener('input', scanDocument);
+
+window.addEventListener('DOMContentLoaded', function () {
+  scanDocument();
+});
